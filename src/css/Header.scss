@@ -1,0 +1,63 @@
+@use './common.scss';
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    line-height: 8rem;
+
+    &.on .gnb {
+        background: common.$wc;
+    }
+
+    .gnb {
+        position: relative;
+        transition: 0.5s;
+
+
+        ul {
+            display: flex;
+            gap: 40px;
+            font-size: 1.5rem;
+
+            li {
+                position: relative;
+            }
+
+            &.rt {
+                gap: 20px;
+                font-size: 2.5rem;
+                color: rgba(0, 0, 0, 0.35);
+
+                span {
+                    position: absolute;
+                    width: 2rem;
+                    height: 2rem;
+                    top: 1.5rem;
+                    right: -1rem;
+                    padding: 0.5rem;
+                    background: common.$mc;
+                    color: common.$wc;
+                    border-radius: 50%;
+                    line-height: 0.8;
+                    text-align: center;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 8rem;
+    }
+
+    .rt {
+        position: absolute;
+        top: 0;
+        right: 8rem;
+    }
+}
