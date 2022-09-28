@@ -5,7 +5,7 @@ const MainNav = () => {
     return (
         <ul>
             <li><Link to='/'>BRAND</Link></li>
-            <li><Link to='/'>SHOPPING</Link></li>
+            <li><Link to='/shoplist'>SHOPPING</Link></li>
             <li><Link to='/'>EVENT</Link></li>
             <li><Link to='/'>CS CENTER</Link></li>
         </ul>

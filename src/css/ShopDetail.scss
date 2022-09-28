@@ -1,0 +1,37 @@
+@use 'common';
+
+.shopList {
+    padding: 20rem 0;
+
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem 3rem;
+    }
+
+    figure {
+        flex: 1 0 15%;
+    }
+
+    .box {
+        margin: 0 0 2rem 0;
+    }
+
+    .name {
+        font-weight: 600;
+        margin: 0 0 1rem 0;
+        min-height: 4rem;
+    }
+
+    .des {
+        font-size: 1.4rem;
+        margin: 0 0 1rem 0;
+        min-height: 10rem;
+    }
+
+    .price span {
+        color: tomato;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
